@@ -21,13 +21,14 @@ function build() {
 
 build();
 
+if (process.env.ENV !== 'prod') {
+    fs.watch('./common', function (eventType, filename) {
+        if (filename.match(/\.js$/)) {
+            console.log('\x1b[33m%s\x1b[0m', filename);
 
-fs.watch('./common', function (eventType, filename) {
-    if (filename.match(/\.js$/)) {
-        console.log('\x1b[33m%s\x1b[0m', filename);
-        
-        build();
+            build();
 
-        return;
-    }
-});
+            return;
+        }
+    });
+}

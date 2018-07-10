@@ -7,4 +7,4 @@ require('http').createServer(function (request, response) {
     request.addListener('end', function () {
         file.serve(request, response);
     }).resume();
-}).listen(8080);
+}).listen(process.env.ENV === 'prod' ? 80 : 8080);
