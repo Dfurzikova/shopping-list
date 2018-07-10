@@ -68,7 +68,7 @@ var list = {
 
         removeButton = document.createElement('img');
         removeButton.className = "remove-button";
-        removeButton.src = '/remove-button.png';
+        removeButton.src = 'remove-button.png';
         newLi.appendChild(removeButton);
     },
 

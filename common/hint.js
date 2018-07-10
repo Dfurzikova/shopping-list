@@ -18,6 +18,8 @@ var hint = {
         })
     },
 
+    
+
     _createOneHint: function (value) {
         var newHint = document.createElement('li');
         var _this = this;
@@ -39,6 +41,11 @@ var hint = {
         });
 
         this._hintList.appendChild(newHint);
+        
+        
+
+       // console.log(value, 'value - значение подсказки');
+        
     },
 
     clearHint: function () {

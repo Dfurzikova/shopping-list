@@ -1,5 +1,5 @@
 var app = {
-    _dictionary: ['киви', 'банан', 'абрикос'],
+    _dictionary: ["картофель", "морковь", "лук", "чеснок", "петрушка", "укроп", "яблокo", "банан", "лимон"],
 
     init: function () {
         document.addEventListener('DOMContentLoaded', this._onContentLoaded.bind(this));

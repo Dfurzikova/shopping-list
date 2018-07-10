@@ -11,11 +11,16 @@ var input = {
 
     _onInput: function () {
         var value = this._domElem.value;
-
+        
         if (value) {
             hint.showHint(value);
+        } else {
+            hint.clearHint();
         }
     },
+
+
+    
 
     _onKeyDown: function (e) {
         var value = this._domElem.value;
